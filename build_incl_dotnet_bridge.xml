@@ -9,12 +9,6 @@
 -->
     <target name="help">
         <echo>
-            ant help                     --> print this help
-            ant build                    --> compile, make jar and copy resources
-            ant clean                    --> remove output
-            ant doc                      --> collect documentation
-            ant zip                      --> create a zipfile with binaries, documentation
-        	                                 and xmlschemas
             ant zip-tests                --> zip public test cases
         </echo>
     </target>
