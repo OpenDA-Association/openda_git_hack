@@ -9,12 +9,6 @@
 -->
     <target name="help">
         <echo>
-            ant help                     --> print this help
-            ant build                    --> compile, make jar and copy resources
-            ant clean                    --> remove output
-            ant doc                      --> collect documentation
-            ant zip                      --> create a zipfile with binaries, documentation
-        	                                 and xmlschemas
             ant zip-tests                --> zip public test cases
         </echo>
     </target>
@@ -205,13 +199,6 @@
 
     <target name="zip-tests"> <!-- depends="svn-revision"> -->
     	<ziptest testname="simple_lorenz" />
-    	<ziptest testname="simple_lorenz96" />
-    	<ziptest testname="simple_lorenz_transformed_observations" />
-    	<ziptest testname="simple_oscillator" />
-    	<ziptest testname="simple_two_oscillators" />
-    	<ziptest testname="native_oscillator" />
-    	<ziptest testname="native_parallel" />
-    	<ziptest testname="swan_l21triad" />
     	<ziptest testname="swan_l21triad_two_twin" />
     </target>
 
